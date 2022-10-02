@@ -630,7 +630,7 @@ background: var(--footer-bgc-link);
 }
 
 .footer-btn {
-display: flex;
+    display: flex;
     align-items: center;
 
     background-color: var(--accent-color);
@@ -648,6 +648,11 @@ display: flex;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     
         cursor: pointer;
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+    background-color: var(--hero-btn-hover-focus);
 }
 
 .telegram-logo {
