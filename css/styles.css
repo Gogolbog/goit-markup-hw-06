@@ -900,6 +900,8 @@ cursor: pointer;
     height: 120px;
     outline: none;
     cursor: pointer;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-element textarea::placeholder {
@@ -966,6 +968,14 @@ align-items: center;
     background-color: var(--accent-color);
     border-color: var(--accent-color);
 
+}
+
+.checkbox-icon svg {
+    opacity: 0;
+}
+
+.checkbox:checked + .checkbox-icon svg {
+    opacity: 1;
 }
 
 .checkbox-icon {
